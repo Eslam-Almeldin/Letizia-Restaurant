@@ -1,0 +1,345 @@
+@import "mainui";
+
+// MEDIA QUERIES
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .h-head {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+
+  // SLIDER SECTION
+  .slider {
+    .caption {
+      font-size: 20px;
+    }
+  }
+
+  // MENU SECTION
+  .menu {
+    .menu-list {
+      flex-flow: column wrap;
+      text-align: center;
+      padding: 0;
+      .menu-item {
+        margin: 0 24px;
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .duo {
+      padding: 0;
+      .half-mobile {
+        flex-basis: 100%;
+      }
+    }
+
+    .items {
+      li {
+        font-size: 20px;
+        padding-right: 0;
+      }
+    }
+  }
+  // ABOUT RESTAURANT
+  .about-restaurant {
+    .duo {
+      .half {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  // RESERVE YOUR TABLE
+  .res-table {
+    .form {
+      .half-input {
+        flex-basis: 100%;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  // GET-SOCIAL
+  .get-social {
+    .social-images {
+      .half-image {
+        flex-basis: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .daily {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  // FOOTER
+  .footer {
+    .duo {
+      .half {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  /*****************************CONTACT PAGE**********************/
+  .contact-form {
+    .h-contact {
+      font-size: 30px;
+      text-align: center;
+    }
+    .contact1,
+    .contact2 {
+      height: 553px;
+    }
+
+    .contact1 {
+      .text-area {
+        margin-left: 4%;
+      }
+    }
+  }
+}
+/************************************************************************/
+
+@media (min-width: 401px) and (max-width: 575px) {
+  // SLIDER
+  .slider {
+    .caption {
+      font-size: 23px;
+    }
+  }
+
+  // MENU SECTION
+  .menu {
+    .menu-list {
+      flex-flow: column wrap;
+      text-align: center;
+      padding: 0;
+      .menu-item {
+        margin: 0 24px;
+        font-size: 22px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .duo {
+      .half-mobile {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  // ABOUT RESTAURANT
+  .about-restaurant {
+    .duo {
+      .half {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  // RESERVE YOUR TABLE
+  .res-table {
+    .form {
+      .half-input {
+        flex-basis: 90%;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  // GET-SOCIAL
+  .get-social {
+    .social-images {
+      .half-image {
+        flex-basis: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // FOOTER
+  .footer {
+    .duo {
+      .half {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  /*****************************CONTACT PAGE**********************/
+  .contact-form {
+    .h-contact {
+      text-align: center;
+    }
+
+    .contact1 {
+      .text-area {
+        margin-left: 4%;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .h-head {
+    font-size: 35px;
+  }
+
+  // MENU SECTION
+  .menu {
+    .menu-list {
+      .menu-item {
+        margin: 0 24px;
+        font-size: 22px;
+      }
+    }
+
+    .items {
+      li {
+        font-size: 22px;
+      }
+    }
+
+    .duo {
+      .half-mobile {
+        flex-basis: 90%;
+      }
+    }
+  }
+
+  // ABOUT RESTAURANT
+  .about-restaurant {
+    .duo {
+      .half {
+        flex-basis: 100%;
+      }
+    }
+
+    p {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  // RESERVE YOUR TABLE
+  .res-table {
+    .form {
+      .half-input {
+        flex-basis: 44%;
+        margin-right: 30px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // GET-SOCIAL
+  .get-social {
+    .social-images {
+      .half-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // FOOTER
+  .footer {
+    .duo {
+      .half {
+        flex-basis: 51%;
+      }
+    }
+  }
+}
+/************************************************************************/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  // MENU SECTION
+  .menu {
+    .items {
+      li {
+        font-size: 22px;
+      }
+    }
+    .duo {
+      .half-mobile {
+        flex-basis: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //CONTAINER
+  .container {
+    margin: 0 10px;
+  }
+  // NAVBAR
+  .navbar {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $secound-color;
+    .collapse {
+      display: flex;
+
+      .moba {
+        display: block;
+        margin-right: 40px;
+        margin-top: 10px;
+      }
+      .nav-logo {
+        font-size: 20px;
+        border-radius: 0;
+        padding: 10px;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+
+      .nav-list {
+        flex-direction: column;
+      }
+    }
+  }
+
+  //   MENU SECTION
+  .menu {
+    .btn {
+      width: 40%;
+    }
+  }
+
+  /*************CONTACT PAGE*************************/
+  .contact-form {
+    .duo {
+      .contact1,
+      .contact2 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .menu {
+    .duo {
+      .half-mobile {
+        flex-basis: 40%;
+      }
+    }
+  }
+}

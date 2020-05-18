@@ -1,0 +1,255 @@
+@import "mainui";
+
+/* IMAGES SLIDER */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 570px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.slide .caption {
+  position: relative;
+  left: 0%;
+  right: 25%;
+  top: 24%;
+  text-align: center;
+  font-family: $first-font;
+  color: #fff;
+  line-height: 1.7;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-size: 30px;
+  text-shadow: 0 1px 3px #3c4f5d;
+}
+.slide.current {
+  opacity: 1;
+}
+
+/*Background Images*/
+.slide:first-child {
+  background: url("../images/slide1.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url("../images/slide2.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("../images/slide3.jpg") no-repeat center center/cover;
+}
+
+/* FOOD MENU */
+.menu {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  font-family: $secound-font;
+  padding-top: 20px;
+}
+
+.menu-item {
+  font-size: 30px;
+  color: $secound-color;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0px 30px;
+  font-weight: bold;
+}
+.items {
+  padding-top: 40px;
+
+  li {
+    padding-bottom: 30px;
+    font-size: 25px;
+    padding-right: 50px;
+    color: $secound-color;
+    letter-spacing: 1px;
+  }
+}
+
+.menu .btn {
+  font-size: 18px;
+  width: 15%;
+}
+
+/* ABOUT RESTAURANT */
+.about-restaurant {
+  background-color: $secound-color;
+
+  p {
+    color: #fff;
+    padding-left: 21px;
+  }
+}
+
+/* RESERVE YOUR TABLE */
+.res-table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  .form .btn {
+    margin-top: 40px;
+  }
+}
+
+/* GET-SOCIAL */
+hr {
+  width: 50%;
+  color: $secound-color;
+}
+.get-social {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .insta {
+    text-align: center;
+
+    .fab {
+      color: #c13584;
+    }
+  }
+
+  .social-images {
+    margin-top: 50px;
+
+    .half-image {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* OPENING */
+.daily {
+  border-top: 1px solid $secound-color;
+  border-bottom: 1px solid $secound-color;
+
+  .h-head {
+    border-right: 1px solid $secound-color;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
+/*******************************MENU PAGE***********************************/
+
+/* HEADER */
+.image-menu {
+  background: url(../images/menu-page-header.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/************************RESERVATION PAGE***********************************/
+
+/* HEADER */
+.image-reservation {
+  background: url(../images/reservation-page-header.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/************************CONTACT PAGE***********************************/
+.image-contact {
+  background: url(../images/contact-page-header.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.h-contact {
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: $secound-color;
+}
+.contact1,
+.contact2 {
+  height: 600px;
+  width: 44%;
+  margin-top: 25px;
+  padding: 20px;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.contact1 {
+  -webkit-box-shadow: -6px -7px 15px 2px rgba(1, 56, 82, 0.32);
+  -moz-box-shadow: -6px -7px 15px 2px rgba(1, 56, 82, 0.32);
+  box-shadow: -6px -7px 15px 2px rgba(1, 56, 82, 0.32);
+  .form {
+    .half-input {
+      flex-basis: 100%;
+      margin-right: 15px;
+    }
+
+    .text-area {
+      margin-left: 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+.contact2 {
+  background: $secound-color;
+  -webkit-box-shadow: 12px -6px 15px 2px rgba(1, 56, 82, 0.32);
+  -moz-box-shadow: 12px -6px 15px 2px rgba(1, 56, 82, 0.32);
+  box-shadow: 12px -6px 15px 2px rgba(1, 56, 82, 0.32);
+
+  .h-contact {
+    color: #fff;
+  }
+
+  .contact-call {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .call-info {
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 42px;
+  }
+
+  .social-icons {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
